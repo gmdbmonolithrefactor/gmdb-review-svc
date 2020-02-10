@@ -1,0 +1,8 @@
+---
+applications:
+  - name: gmdb-review-svc
+    buildpacks:
+      - java_buildpack
+    path: build/libs/gmdb-review-svc-0.0.1-SNAPSHOT.jar
+    services:
+      - gmdb-devdb
