@@ -109,7 +109,6 @@ public class ReviewServiceTests {
 
     @Test
     void findByUserScreenNameNotExists() {
-        List<Review> expected = Arrays.asList(testReviews.get(1), testReviews.get(4));
         String screenName = "screenName";
 
         Mockito.when(jdbcHelper.findUserIdsFromUserScreenName(screenName)).thenReturn(Collections.emptyList());
