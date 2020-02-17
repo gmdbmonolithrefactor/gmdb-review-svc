@@ -11,8 +11,7 @@ Reference implementation for the review service, for the gMDb Monolith Refactor 
 ## Endpoint Examples
 * All reviews for a user - GET: `/gmdb/api/reviews/{userScreenName}`
 * All reviews for a movie - GET: `/gmdb/api/reviews/{imdbid}` note: service wil not validate the imdbid
-* Add a review for a movie - POST: `/gmdb/api/reviews/{imdbid}` Body, TBD, should include userid, title, and details of the review.  Should also require token to confirm user.
-NOTE: All review object will include a property that will contain a link to retrieve the movie details.
+* Add a review for a movie - POST: `/gmdb/api/reviews` Body, TBD, should include userid, title, and details of the review.  Should also require token to confirm user.
 
 ## Docker Instructions
 ````
