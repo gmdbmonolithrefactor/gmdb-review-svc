@@ -24,7 +24,7 @@ $ docker run -d -p [localport]:8080 \
         -e DB_USER=gmdb \
         -e DB_PWD=someGoodSecret \
         --network gmdb-bridge \
-        gmdb/movies
+        gmdb/review
 ```` 
 
 ## PCF Instructions
